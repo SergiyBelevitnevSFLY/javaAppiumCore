@@ -1,6 +1,7 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -12,6 +13,7 @@ public class BaseiOSTest extends BaseTest{
     @Override
     public void setDriver() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
         capabilities.setCapability("automationName", "XCUITest");
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("platformVersion", "14.5");
@@ -21,6 +23,7 @@ public class BaseiOSTest extends BaseTest{
         iosDriver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         appiumDriverThreadLocal.set(iosDriver);
     }
+
 
     @Override
     public IOSDriver<IOSElement> getDriver() {

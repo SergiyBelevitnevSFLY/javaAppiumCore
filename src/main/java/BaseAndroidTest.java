@@ -5,6 +5,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class BaseAndroidTest extends BaseTest {
 
@@ -23,6 +24,7 @@ public class BaseAndroidTest extends BaseTest {
         desiredCapabilities.setCapability("appActivity", ".SplashActivity");
         desiredCapabilities.setCapability("appPackage", "com.swaglabsmobileapp");
         androidDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);
+        androidDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         appiumDriverThreadLocal.set(androidDriver);
     }
 

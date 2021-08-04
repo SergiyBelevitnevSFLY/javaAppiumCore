@@ -1,11 +1,12 @@
 import org.testng.annotations.Test;
-import pages.BaseAndroidPageObject;
+import pages.SwagLoginPage;
 
 public class FirstAndroidTest extends BaseAndroidTest{
 
     @Test
     public void firstAndroidTest(){
-        BaseAndroidPageObject baseAndroidPageObject = new BaseAndroidPageObject(getDriver());
+        SwagLoginPage swagLoginPage = new SwagLoginPage(getDriver());
+        swagLoginPage.login("standard_user", "secret_sauce");
 
     }
 }

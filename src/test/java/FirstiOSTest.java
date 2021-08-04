@@ -1,5 +1,5 @@
 import org.testng.annotations.Test;
-import pages.BaseIOSPageObject;
+import pages.base.BaseIOSPageObject;
 
 public class FirstiOSTest extends BaseiOSTest{
 
