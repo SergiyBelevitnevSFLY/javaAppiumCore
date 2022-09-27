@@ -1,5 +1,5 @@
 import org.testng.annotations.Test;
-import pages.BaseIOSPageObject;
+import pages.base.BaseIOSPageObject;
 
 public class FirstiOSTest extends BaseiOSTest{
 
@@ -7,6 +7,7 @@ public class FirstiOSTest extends BaseiOSTest{
     public void firstTest(){
 
         BaseIOSPageObject baseIOSPageObject = new BaseIOSPageObject(getDriver());
+        System.out.println("test id " +Thread.currentThread().getId());
 
     }
 }
