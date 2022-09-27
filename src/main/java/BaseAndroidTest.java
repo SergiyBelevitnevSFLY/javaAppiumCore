@@ -18,8 +18,11 @@ public class BaseAndroidTest extends BaseTest {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "android");
         desiredCapabilities.setCapability("automationName", "UiAutomator2");
-        desiredCapabilities.setCapability("app", System.getProperty("user.dir") + "/SauceLabsTestApp.apk");
+        desiredCapabilities.setCapability("app",
+                System.getProperty("user.dir") + "/SauceLabsTestApp.apk");
+//                "/Users/belevitnev/Desktop/Builds/DevelopFlyAndroid.apk");
         desiredCapabilities.setCapability("platformVersion", "10");
+//        desiredCapabilities.setCapability("fullReset", true);
         desiredCapabilities.setCapability("deviceName", "Pixel XL API 29");
         desiredCapabilities.setCapability("appActivity", ".SplashActivity");
         desiredCapabilities.setCapability("appPackage", "com.swaglabsmobileapp");
