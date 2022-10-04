@@ -28,5 +28,8 @@ public class FirstAndroidTest extends BaseAndroidTest {
 
         swagCartPage.clickCheckoutButton();
 
+        SwagCheckoutPage swagCheckoutPage = new SwagCheckoutPage(getDriver());
+        swagCheckoutPage.continueCheckout("First Name", "Last Name", "11250");
+
     }
 }
