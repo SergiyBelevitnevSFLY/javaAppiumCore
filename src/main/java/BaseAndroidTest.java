@@ -1,4 +1,3 @@
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -23,7 +22,7 @@ public class BaseAndroidTest extends BaseTest {
 //                "/Users/belevitnev/Desktop/Builds/DevelopFlyAndroid.apk");
         desiredCapabilities.setCapability("platformVersion", "10");
 //        desiredCapabilities.setCapability("fullReset", true);
-        desiredCapabilities.setCapability("deviceName", "Pixel XL API 29");
+        desiredCapabilities.setCapability("deviceName", "Galaxy Nexus API 29");
         desiredCapabilities.setCapability("appActivity", ".SplashActivity");
         desiredCapabilities.setCapability("appPackage", "com.swaglabsmobileapp");
         androidDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);

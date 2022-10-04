@@ -7,5 +7,7 @@ public class BaseAndroidPageObject extends AndroidElementInteractions{
 
     public BaseAndroidPageObject(AndroidDriver appiumDriver) {
         super(appiumDriver);
+
+
     }
 }
