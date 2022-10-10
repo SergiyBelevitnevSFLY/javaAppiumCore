@@ -21,9 +21,9 @@ public class BaseAndroidTest extends BaseTest {
         desiredCapabilities.setCapability("app",
                 System.getProperty("user.dir") + "/SauceLabsTestApp.apk");
 //                "/Users/belevitnev/Desktop/Builds/DevelopFlyAndroid.apk");
-        desiredCapabilities.setCapability("platformVersion", "10");
+        desiredCapabilities.setCapability("platformVersion", "12");
 //        desiredCapabilities.setCapability("fullReset", true);
-        desiredCapabilities.setCapability("deviceName", "Pixel XL API 29");
+        desiredCapabilities.setCapability("deviceName", "Pixel 6 Pro API 31");
         desiredCapabilities.setCapability("appActivity", ".SplashActivity");
         desiredCapabilities.setCapability("appPackage", "com.swaglabsmobileapp");
         androidDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);
