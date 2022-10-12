@@ -15,23 +15,23 @@ public class SwagLoginPage extends BaseAndroidPageObject {
         super(appiumDriver);
     }
 
-    private void sendUserName(String userName){
+    private void sendUserName(String userName) {
         sendKeys(userName, userNameInput);
     }
-    private void sendPassword(String password){
+
+    private void sendPassword(String password) {
         sendKeys(password, passwordInput);
     }
 
-    private void clickLoginButton(){
+    private void clickLoginButton() {
         click(loginButton);
     }
 
-    public void login(String userName, String password){
+    public void login(String userName, String password) {
         sendUserName(userName);
         sendPassword(password);
         clickLoginButton();
     }
-
 
 
 }
