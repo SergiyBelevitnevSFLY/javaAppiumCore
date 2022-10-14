@@ -8,7 +8,7 @@ import pages.base.BaseAndroidPageObject;
 @SuppressWarnings("rawtypes")
 public class SwagFilterPage extends BaseAndroidPageObject {
 
-    By nameZtoA = MobileBy.xpath("//android.widget.ScrollView[@content-desc=\"Selector container\"]/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView");
+    By nameZtoA = MobileBy.xpath("//android.widget.TextView[contains(@text, 'Name (Z to A)')]");
 
 
     public SwagFilterPage(AndroidDriver appiumDriver) {

@@ -10,7 +10,7 @@ public class SwagCheckoutPage extends BaseAndroidPageObject {
     By userFirstNameInput = MobileBy.AccessibilityId("test-First Name");
     By userLastNameInput = MobileBy.AccessibilityId("test-Last Name");
     By userZipInput = MobileBy.AccessibilityId("test-Zip/Postal Code");
-    By continueButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-CONTINUE\"]/android.widget.TextView");
+    By continueButton = MobileBy.AccessibilityId("test-CONTINUE");
 
     public SwagCheckoutPage(AndroidDriver appiumDriver) {
         super(appiumDriver);

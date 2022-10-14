@@ -7,10 +7,10 @@ import pages.base.BaseAndroidPageObject;
 
 public class SwagProductPage extends BaseAndroidPageObject {
 
-    By menuButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Menu\"]/android.view.ViewGroup/android.widget.ImageView");
-    By filterButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Modal Selector Button\"]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView");
-    By addToCartFirstElement = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]/android.widget.TextView");
-    By cartButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.ImageView");
+    By menuButton = MobileBy.AccessibilityId("test-Menu");
+    By filterButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Modal Selector Button\"]");
+    By addToCartFirstElement = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]");
+    By cartButton = MobileBy.AccessibilityId("test-Cart");
 
 
     public SwagProductPage(AndroidDriver appiumDriver) {

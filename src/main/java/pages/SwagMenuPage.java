@@ -7,8 +7,8 @@ import pages.base.BaseAndroidPageObject;
 
 public class SwagMenuPage extends BaseAndroidPageObject {
 
-    By allItemsOption = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Cart drop zone\"]/android.view.ViewGroup/android.widget.TextView");
-    By closeButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Close\"]/android.widget.ImageView");
+    By allItemsOption = MobileBy.AccessibilityId("test-ALL ITEMS");
+    By closeButton = MobileBy.AccessibilityId("test-Close");
 
 
     public SwagMenuPage(AndroidDriver appiumDriver) {

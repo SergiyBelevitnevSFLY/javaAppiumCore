@@ -30,7 +30,7 @@ public class FirstAndroidTest extends BaseAndroidTest {
 
         swagCartPage.clickCheckoutButton();
 
-        swagCheckoutPage.continueCheckout("First Name", "Last Name", "11250");
+        swagCheckoutPage.continueCheckout("Test First Name", "Test Last Name", "11250");
 
     }
 }

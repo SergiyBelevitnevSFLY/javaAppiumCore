@@ -9,7 +9,7 @@ import pages.base.BaseAndroidPageObject;
 public class SwagCartPage extends BaseAndroidPageObject {
 
     By checkoutButton = MobileBy.AccessibilityId("test-CHECKOUT");
-    By yourCart = MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView");
+    By yourCart = MobileBy.xpath("//android.widget.TextView[contains(@text, 'YOUR CART')]");
 
     public SwagCartPage(AndroidDriver appiumDriver) {
 
