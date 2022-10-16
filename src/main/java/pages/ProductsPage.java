@@ -9,20 +9,20 @@ import pages.base.BaseAndroidPageObject;
 
 public class ProductsPage extends BaseAndroidPageObject {
 
-    By filterButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Modal Selector Button\"]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView");
-    By filterByNameZToAButton = MobileBy.xpath("//android.widget.ScrollView[@content-desc=\"Selector container\"]/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView");
-    By listViewButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Toggle\"]/android.widget.ImageView");
-    By addFirstItemToCartButton = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]/android.widget.TextView");
+    By filterButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Modal Selector Button\"]");
+    By filterByNameZToAButton = MobileBy.xpath("//android.widget.ScrollView[@content-desc=\"Selector container\"]//android.view.ViewGroup[3]");
+    By listViewButton = MobileBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Toggle\"]");
+    By addFirstItemToCartButton = MobileBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]");
 
     public ProductsPage(AndroidDriver appiumDriver) {
         super(appiumDriver);
     }
 
-    private void clickFilterButton(){
+    private void clickFilterButton() {
         click(filterButton);
     }
 
-    private void clickNameZToAButton(){
+    private void clickNameZToAButton() {
         click(filterByNameZToAButton);
     }
 
@@ -31,11 +31,11 @@ public class ProductsPage extends BaseAndroidPageObject {
         clickNameZToAButton();
     }
 
-    public void switchToListView(){
+    public void switchToListView() {
         click(listViewButton);
     }
 
-    public void addFirstItemToCart(){
+    public void addFirstItemToCart() {
         WebDriverWait wait = new WebDriverWait(appiumDriver, 5);
         wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfElementLocated(addFirstItemToCartButton)));
         click(addFirstItemToCartButton);

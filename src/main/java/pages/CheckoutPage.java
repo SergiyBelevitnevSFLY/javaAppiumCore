@@ -16,23 +16,23 @@ public class CheckoutPage extends BaseAndroidPageObject {
         super(appiumDriver);
     }
 
-    private void sendFirstName(String firstName){
+    private void sendFirstName(String firstName) {
         sendKeys(firstName, firstNameInput);
     }
 
-    private void sendLastName(String lastName){
+    private void sendLastName(String lastName) {
         sendKeys(lastName, lastNameInput);
     }
 
-    private void sendZipPostalCode(String zipPostalCode){
+    private void sendZipPostalCode(String zipPostalCode) {
         sendKeys(zipPostalCode, zipPostalCodeInput);
     }
 
-    private void clickContinueButton(){
+    private void clickContinueButton() {
         click(continueButton);
     }
 
-    public void fillCheckoutInformation(String firstName, String lastName, String zipPostalCode){
+    public void fillCheckoutInformation(String firstName, String lastName, String zipPostalCode) {
         sendFirstName(firstName);
         sendLastName(lastName);
         sendZipPostalCode(zipPostalCode);
